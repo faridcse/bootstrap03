@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fonts link -->
+
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom CSS/style.css link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- media CSS file -->
+    <link rel="stylesheet" href="css/media.css">
+
+    <title>Bootstarap Components</title>
+  </head>
+  <body>
+    
+    <section class="accordion-section mb-5">
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                HTML5
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>HTML5</strong> is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last major HTML version that is a World Wide Web Consortium recommendation. The current specification is known as the HTML Living Standard.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                CSS3
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Cascading Style Sheets Level 3 <strong>(CSS3)</strong> is the iteration of the CSS standard used in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes and improvements.
+
+                A key change is the division of standard into separate modules, which makes it easier to learn and understand. As of February 2014, the standard is still under development by the World Wide Web Consortium (W3C), but a number of the CSS3 properties have been implemented in the latest versions of some Web browsers.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                JS/JavaScript
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>JavaScript</strong>, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                PHP
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>PHP</strong>d is a general-purpose scripting language geared towards web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994. The PHP reference implementation is now produced by The PHP Group.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alert-section mb-5">
+      <div class="container">
+        <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show  alert</button>
+        <hr class="mb-5">
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>Congratulations!</strong> Your 60% Promo Code: ACD60. Thank you.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+    </section>  
+
+    <section class="badge-section mb-5">
+      <div class="container">
+         <h1>h1 heading <span class="badge bg-secondary">secondary heading</span></h1>
+
+
+         <button type="button" class="btn btn-primary position-relative">
+          Inbox
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            99+
+            <span class="visually-hidden">unread messages</span>
+          </span>
+        </button>
+      </div>
+    </section>
+
+    <section class="button-section mb-5">
+      <div class="container">
+        <button type="button" class="btn btn-success btn-lg">Success Large</button>
+        
+        <button type="button" class="btn btn-outline-success btn-sm">Outline Small</button>
+
+        <button type="button" class="btn btn-outline-success btn-sm" disabled>Disabled</button>
+
+        <br><br>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-primary">Home</button>
+          <button type="button" class="btn btn-success">About</button>
+          <button type="button" class="btn btn-danger">Products</button>
+          <button type="button" class="btn btn-secondary">Contact</button>
+        </div>
+
+      </div>
+    </section>
+    
+    <section class="card-section">
+      <div class="container">
+
+        <div class="row mb-5">
+          <div class="card col-lg-4">
+            <h5 class="card-header">HTML5</h5>
+            <img src="images/html5.png" class="card-img-top" alt="html5">
+            <div class="card-body">
+              <h5 class="card-title">What is?</h5>
+              <p class="card-text">HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last major HTML version that is a World Wide Web Consortium recommendation. The current specification is known as the HTML Living Standard.</p>
+              <a href="#" class="btn btn-primary">View details</a>
+            </div>
+            <div class="card-footer muted">
+              Updated: 2 days ago
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/html5.png" class="card-img-top m-1" alt="html5">
+              <div class="card-body">
+                <h5 class="card-title">HTML5</h5>
+                <p class="card-text">HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last major HTML version that is a World Wide Web Consortium recommendation. The current specification is known as the HTML Living Standard.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/css3.png" class="card-img-top m-1" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CSS3</h5>
+                <p class="card-text">Cascading Style Sheets Level 3 (CSS3) is the iteration of the CSS standard used in the styling and formatting of Web pages. CSS3 incorporates the CSS2 standard with some changes and improvements. A key change is the division of standard into separate modules, which makes it easier to learn and understand. As of February 2014, the standard is still under development by the World Wide Web Consortium (W3C), but a number of the CSS3 properties have been implemented in the latest versions of some Web browsers.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="images/js.png" class="card-img-top m-1" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">JSS/JavaScript</h5>
+                <p class="card-text">JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>     
+
+    <!-- JS link -->    
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
